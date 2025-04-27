@@ -1,0 +1,103 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #3b82f6;
+  --text-color: #1f2937;
+  --background-color: #f3f4f6;
+  --card-background: #ffffff;
+}
+
+.contact-page {
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+/* Hero Section */
+.contact-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Contact Container */
+.contact-container {
+  max-width: 800px;
+  margin: -4rem auto 4rem auto;
+  padding: 0 2rem;
+}
+
+/* Form Embed */
+.form-embed {
+  width: 100%;
+  margin-bottom: 4rem;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Social Section */
+.social-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.social-section h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: var(--primary-color);
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--secondary-color);
+  transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .contact-container {
+    padding: 0 1rem;
+    margin-top: -2rem;
+  }
+
+  .form-embed iframe {
+    height: 400px;
+  }
+} 

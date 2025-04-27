@@ -1,0 +1,218 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #3b82f6;
+  --text-color: #1f2937;
+  --background-color: #f3f4f6;
+  --card-background: #ffffff;
+}
+
+.about-page {
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Mission Section */
+.about-mission {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-content h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+}
+
+.mission-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+/* Values Section */
+.about-values {
+  padding: 6rem 2rem;
+  background: var(--background-color);
+}
+
+.about-values h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.value-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.value-card p {
+  color: var(--text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Achievements Section */
+.about-achievements {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.about-achievements h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.achievements-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.achievement-item {
+  text-align: center;
+  padding: 2rem;
+}
+
+.achievement-item h3 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.achievement-item p {
+  color: var(--text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Approach Section */
+.about-approach {
+  padding: 6rem 2rem;
+  background: var(--background-color);
+}
+
+.about-approach h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.approach-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.approach-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-mission,
+  .about-values,
+  .about-achievements,
+  .about-approach {
+    padding: 4rem 1rem;
+  }
+
+  .mission-content h2,
+  .about-values h2,
+  .about-achievements h2,
+  .about-approach h2 {
+    font-size: 2rem;
+  }
+
+  .values-grid,
+  .achievements-content {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    padding: 2rem;
+  }
+
+  .achievement-item h3 {
+    font-size: 2rem;
+  }
+} 

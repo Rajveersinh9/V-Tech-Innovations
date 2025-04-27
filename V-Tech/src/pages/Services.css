@@ -1,0 +1,262 @@
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #1e40af;
+  --accent-color: #3b82f6;
+  --text-color: #1f2937;
+  --background-color: #f3f4f6;
+  --card-background: #ffffff;
+}
+
+.services-page {
+  min-height: 100vh;
+  background: var(--background-color);
+}
+
+/* Hero Section */
+.services-hero {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+/* Overview Section */
+.services-overview {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.overview-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.overview-content h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.overview-card {
+  background: var(--card-background);
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.overview-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.overview-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.overview-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.overview-card p {
+  color: var(--text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* Services Details Section */
+.services-details {
+  padding: 6rem 2rem;
+  background: var(--background-color);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: var(--card-background);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.service-image {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-icon {
+  font-size: 4rem;
+  color: white;
+}
+
+.service-content {
+  padding: 2.5rem;
+}
+
+.service-content h3 {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.service-description {
+  color: var(--text-color);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.service-details {
+  display: grid;
+  gap: 2rem;
+}
+
+.features-section h4,
+.benefits-section h4 {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.features-list,
+.benefits-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.feature-item,
+.benefit-item {
+  padding: 1rem;
+  background: var(--background-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover,
+.benefit-item:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+.feature-text,
+.benefit-text {
+  display: block;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+/* CTA Section */
+.services-cta {
+  padding: 6rem 2rem;
+  background: white;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .services-overview,
+  .services-details,
+  .services-cta {
+    padding: 4rem 1rem;
+  }
+
+  .overview-content h2,
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .service-content {
+    padding: 2rem;
+  }
+
+  .service-content h3 {
+    font-size: 1.5rem;
+  }
+} 
